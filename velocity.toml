@@ -1,0 +1,41 @@
+config-version = "2.9"
+bind = "0.0.0.0:14053"
+motd = "<#09add3>A Velocity Server"
+show-max-players = 5000
+online-mode = false
+force-key-authentication = false
+player-info-forwarding-mode = "modern"
+forwarding-secret-file = "forwarding.secret"
+announce-forge = false
+
+[servers]
+hub = "163.5.201.9:12003"
+lifesteal = "163.5.201.9:11209"
+survival = "163.5.201.2:10596"
+pvp = "163.5.201.8:13766"
+
+try = [
+  "hub"
+]
+
+[forced-hosts]
+
+[advanced]
+compression-threshold = 256
+compression-level = -1
+login-ratelimit = 3000
+connection-timeout = 5000
+read-timeout = 30000
+haproxy-protocol = false
+tcp-fast-open = false
+bungee-plugin-message-channel = true
+show-ping-requests = false
+failover-on-unexpected-server-disconnect = true
+announce-proxy-commands = true
+log-command-executions = false
+
+[query]
+enabled = false
+port = 25565
+map = "Velocity"
+show-plugins = false
